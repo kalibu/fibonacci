@@ -1,0 +1,8 @@
+--maven build
+mvn clean install
+
+--docker build
+docker build . -t fibonacci
+
+--kubectl build
+kubectl apply -f fib.yaml
