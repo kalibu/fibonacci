@@ -13,12 +13,21 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fibonacci</name>
 	<description>Fibonacci</description>
+
 	<properties>
 		<java.version>17</java.version>
 		<springdoc.version>2.2.0</springdoc.version>
 		<springdoc-openapi-maven-plugin.version>1.4</springdoc-openapi-maven-plugin.version>
 		<hibernatevalidation.version>8.0.1.Final</hibernatevalidation.version>
 	</properties>
+
+	<developers>
+		<developer>
+			<name>David Pitanguy</name>
+			<email>david.pitanguy@gmail.com.br</email>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

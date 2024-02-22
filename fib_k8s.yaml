@@ -16,7 +16,7 @@ spec:
       containers:
       - image: fibonacci
         name: fibonacci
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
 kind: Service
@@ -44,7 +44,7 @@ spec:
     kind: Deployment
     name: fibonacci
   minReplicas: 2
-  maxReplicas: 10
+  maxReplicas: 5
   metrics:
     - type: Resource
       resource:

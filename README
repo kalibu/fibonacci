@@ -1,8 +1,20 @@
---maven build
+#Minikube commands useful
+minikube status #verify status on minikube
+minikube start #start minikube
+minikube start --driver=docker #start minikube using docker local
+
+#Steps to use local iamges
+1) run -> minikube docker-env
+2) run the content of last line, ex: @FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env --shell cmd') DO @%i
+
+#maven build
 mvn clean install
 
---docker build
+#docker build
 docker build . -t fibonacci
 
---kubectl build
-kubectl apply -f fib.yaml
+#kubectl build
+kubectl apply -f fib_k8s.yaml
+
+#kubectl useful
+kubectl get all
